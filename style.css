@@ -3,6 +3,11 @@ body {
   margin: 2rem;
 }
 
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
 .nes-container:not(:last-child) {
   margin-bottom: 1rem;
 }
