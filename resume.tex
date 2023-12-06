@@ -1,0 +1,222 @@
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+	
+	%----------HEADING-----------------
+	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{\href{https://www.linkedin.com/in/kdrosa/}{\Large Kevin Dela Rosa}} &  \href{mailto:kevd1337@gmail.com}{kevd1337@gmail.com}
+	\end{tabular*}
+	
+	
+	
+	%-----------EXPERIENCE-----------------
+	\section{Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Snap, Inc. (Snapchat)}{Seattle, WA}
+	{Machine Learning Tech Lead / Engineering Manager (Multimodal AI @ Advanced Understanding)}{June 2016 - Present}
+	\resumeItemListStart
+ 	 \item{Currently spinning up an applied research team focused on advanced technology for multimodal video understanding}
+      \item{Drove implementation of camera unlocking experience that enables AR content to be triggered by scanning images; unlocks thousands of community lenses \& high profile partner integrations as seen at the Super Bowl \& Cannes}
+      \item{Launched visual classification via Scan Module in Snapchat's Lens Studio which gives AR creators the ability to recognize 500+ object types across 4 categories (Objects, Places, Cars, Dogs) within a Snapchat lens}
+      \item{Drove development of Snapchat's in-house OCR service used by visual product search, platform integrity, and content moderation services; improved spam detection by 168\%, reduced human labeling cost by \$128k/yr}
+      \item{Drove development of 10B scale reverse image search capabilities for Scan, and deployed supporting infrastructure including focused web crawling and large scale web archiving / data warehousing solutions}
+ 	  \item{Drove integration of math problem detector and equation problem solver into Scan and MyAI product surfaces}
+      \item{Authored billion${}^{+}$ scale vector similarity search engine that powers visual search use cases (e.g. fashion, product, lenses) and content-based machine learning data collection (e.g. visually or audio similar media retrieval) used to collect candidate training data for 50${}^{+}$ use cases (e.g. fine grained facial expression detection, body pose for skeletal tracking, cannabis / drug content classification, pet segmentation, audio scene classification, etc.)}	
+      \item{Trained \& deployed multiple vision models powering Scan including scene tagger, sky segmentation, hand detection}
+      %\item{Contributed to backend \& iOS/Android apps for context cards, widgets, search, messaging, friending \& web}
+      \item{Managed backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers; mentored many; owned cost goals for org; cut infra costs by millions of dollars per year; managed relationships with vendors}
+      \item{Owner of machine learning infrastructure track / job family at Snap, defined job requirements and hiring criteria}
+      \item{Defined technical strategy; named inventor on 14 filed patents; co-authored 3 academic papers, gave 2 industry talks}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Amazon.com, Inc.}{Seattle, WA}
+	{Software Development Engineer II}{Sept 2011 - June 2016}
+	\resumeItemListStart
+	\item{Developed software for product de-duplication system that continuously improves Amazon.com catalog quality}
+	\item{Contributed catalog validation logic \& matching criteria; launched over 30 new Amazon.com product categories}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Carnegie Mellon University}{Pittsburgh, PA}
+	{Graduate Research Assistant}{Jan 2010 - August 2011}
+	\resumeItemListStart
+	\item {Conducted research in natural language processing \& educational computing applications; resulted in 8 publications}
+	\resumeItemListEnd
+	
+%	\resumeSubheading
+%	{Space and Naval Warfare Systems Command (SPAWAR)}{San Diego, CA}
+%	{Naval Research Enterprise Intern}{May 2009 - Aug 2009}
+%	\resumeItemListStart
+%	\item {Designed experiments \& developed text classifiers for use on military chat posts. Results published in ICMLA}
+%	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+	
+	
+	%-----------TALKS & PUBLICATIONS-----------------
+	\section{Select Talks \& Publications \href{https://scholar.google.com/citations?user=8Pc5MiUAAAAJ&hl=en}{(3 industry talks, 14 academic papers, 600+ citations)}}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading
+	{Multimodality-guided Image Style Transfer using Cross-modal GAN Inversion}{WACV}
+	{H Wang, P Wu, K Dela Rosa, C Wang, A Shrivastava}{2024}
+
+
+	\resumeSubheading
+	{FORB: A Flat Object Retrieval Benchmark for Universal Image Embedding}{NeurIPS}
+	{P Wu, S Wang, K Dela Rosa, DH Hu}{2023}
+
+	\resumeSubheading
+	{Open-Vocabulary Object Detection Using Captions}{CVPR}
+	{A Zareian, K Dela Rosa, DH Hu, SF Chang}{2021}
+
+	\resumeSubheading
+	{MLOps at Snapchat: Continuous Machine Learning with Kubeflow \& Spinnaker}{Kubecon}
+	{K Dela Rosa}{2020}
+	
+	\resumeSubheading
+	{Build accurate training datasets with Amazon SageMaker Ground Truth}{AWS re:Invent}
+	{V Madan, K Dela Rosa}{2019}
+	
+	%\resumeSubheading
+	%{Adding intelligence to your JS applications}{CascadiaJS}
+	%{K Dela Rosa}{2015}
+
+	%\resumeSubheading
+	%{Self-assessment in the REAP tutor: knowledge, interest, motivation, \& learning}{Journal of AI in Education}
+	%{K Dela Rosa, M Eskenazi}{2013}
+
+	\resumeSubheading
+	{Topical Clustering of Tweets}{ACM SIGIR Workshop on Social Web \& Mining}
+	{K Dela Rosa, R Shah, B Lin, A Gershman, R Frederking}{2011}
+	
+	%\resumeSubheading
+	%{The advection of supergranules by the Sun's axisymmetric flows}{Astrophysical Journal}
+	%{DH Hathaway, PE Williams, K Dela Rosa, M Cuntz}{2010}
+	
+	%\resumeSubheading
+	%{Text classification methodologies applied to micro-text in military chat}{ICMLA}
+	%{K Dela Rosa, J Ellen}{2009}
+	
+	\resumeSubHeadingListEnd
+
+
+	%-----------EDUCATION-----------------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Carnegie Mellon University}{Pittsburgh, PA} 
+	{Master of Computer Science in Language Technologies}{August 2011}
+	\resumeSubheading
+	{University of Texas at Arlington}{Arlington, TX}
+	{Bachelor of Science in Software Engineering \& Physics (double major)}{May 2009}
+	\resumeSubHeadingListEnd
+
+	%--------SKILLS---xx---------
+\section{Skills \& Technologies}
+\resumeSubHeadingListStart
+\item{
+	\textbf{Coding}{: Python, Java, Go, JavaScript, SQL}
+	\hfill
+	\textbf{Cloud}{: AWS, Google Cloud, Docker, Kubernetes, Spinnaker}      
+} 
+\item{
+	\textbf{AI / ML}{: TensorFlow, PyTorch, Kubeflow, Ray, LangChain, LLMs}
+	\hfill
+	\textbf{Data}{: Spark, Airflow, Beam, NoSQL, Vector DBs}
+} 
+\resumeSubHeadingListEnd
+
+
+	%-----------RECENT ACTIVITIES -----------------
+	%\section{Recent Activities}
+	%\resumeSubHeadingListStart
+	
+	%\resumeSubheading
+	%{Capture the Flag}{DEFCON 26}
+	%{Competed solo in Def Con AI Village’s inaugural capture the flag contest, placed 3rd}{2018}
+	
+	%\resumeSubheading
+	%{iFood2018 Challenge - 5th Place}{CVPR}
+	%{Competed solo in the iFood 2018 fine-grained visual classification competition, placed 5th}{2018}
+	
+	%\resumeSubheading
+	%{Ethical Hacker}{University of Washington}
+	%{Completed a three-course certificate program on ethical hacking/penetration testing}{2018}
+	
+	%\resumeSubheading
+	%{Scientific Committee Member}{Language Resources and Evaluation Conference}
+	%{Member of scientific committee, reviewed paper submissions}{2014, 2016, 2018}
+	
+	%\resumeSubHeadingListEnd
+	
+
+	
+	%-------------------------------------------
+\end{document}
+
