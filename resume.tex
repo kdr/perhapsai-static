@@ -52,6 +52,13 @@
 	\end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingx}[2]{
+	%\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -74,23 +81,33 @@
 	%-----------EXPERIENCE-----------------
 	\section{Experience}
 	\resumeSubHeadingListStart
-	
+
 	\resumeSubheading
-	{Snap, Inc. (Snapchat)}{Seattle, WA}
-	{Machine Learning Tech Lead / Engineering Manager (Multimodal AI @ Advanced Understanding)}{June 2016 - Present}
+	{Snap, Inc. (Snapchat)}{Seattle, WA}{Manager, Machine Learning Engineering (Catalog \& Intent Understanding @ Monetization)}{June 2016 - Present}%April 2024 - Present
+	%\resumeItemListStart
+	%\item{Defined technical road map for expanding usage of 1P \& 3P content signals to improve ad ranking/targeting; represented org in XFN groups defining LLM usage policies to streamline ML engineering \& product development}
+	%\item{Launched Snapchat's first generative AI powered visually enhanced product advertisements}
+    %\item{Managed backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers}% mentored many; owned cost goals for org; cut infra costs by millions of dollars per year; managed relationships with vendors}
+	%\resumeItemListEnd
+	
+	\resumeSubheadingx
+	%{Snap, Inc. (Snapchat)}{Seattle, WA}
+	{Staff Machine Learning Engineer / Tech Lead Manager (Multimodal AI @ Perception)}{} %June 2016 - April 2024
 	\resumeItemListStart
- 	 \item{Currently spinning up an applied research team focused on advanced technology for multimodal video understanding}
+     \item{Launched Snapchat's first generative AI powered visual enhancement system for product advertisements}
       \item{Drove implementation of camera unlocking experience that enables AR content to be triggered by scanning images; unlocks thousands of community lenses \& high profile partner integrations as seen at the Super Bowl \& Cannes}
       \item{Launched visual classification via Scan Module in Snapchat's Lens Studio which gives AR creators the ability to recognize 500+ object types across 4 categories (Objects, Places, Cars, Dogs) within a Snapchat lens}
-      \item{Drove development of Snapchat's in-house OCR service used by visual product search, platform integrity, and content moderation services; improved spam detection by 168\%, reduced human labeling cost by \$128k/yr}
-      \item{Drove development of 10B scale reverse image search capabilities for Scan, and deployed supporting infrastructure including focused web crawling and large scale web archiving / data warehousing solutions}
- 	  \item{Drove integration of math problem detector and equation problem solver into Scan and MyAI product surfaces}
-      \item{Authored billion${}^{+}$ scale vector similarity search engine that powers visual search use cases (e.g. fashion, product, lenses) and content-based machine learning data collection (e.g. visually or audio similar media retrieval) used to collect candidate training data for 50${}^{+}$ use cases (e.g. fine grained facial expression detection, body pose for skeletal tracking, cannabis / drug content classification, pet segmentation, audio scene classification, etc.)}	
-      \item{Trained \& deployed multiple vision models powering Scan including scene tagger, sky segmentation, hand detection}
-      %\item{Contributed to backend \& iOS/Android apps for context cards, widgets, search, messaging, friending \& web}
-      \item{Managed backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers; mentored many; owned cost goals for org; cut infra costs by millions of dollars per year; managed relationships with vendors}
-      \item{Owner of machine learning infrastructure track / job family at Snap, defined job requirements and hiring criteria}
-      \item{Defined technical strategy; named inventor on 14 filed patents; co-authored 3 academic papers, gave 2 industry talks}
+	  \item{Drove development, data collection / labeling \& training / fine-tuning process of Snap's in-house video captioner}
+	  \item{Drove development of Snap's in-house OCR service used by visual product search, platform integrity and content moderation services; improved spam detection by 168\%, reduced human labeling in moderation cost by \$130k/yr}
+	  %\item{Drove integration of math problem detector and equation problem solver into MyAI chat bot}
+      %\item{Drove implementation of 10B scale reverse image search capabilities for Scan, and deployed supporting infrastructure including focused web crawling and large scale web archiving / data warehousing solutions}
+      \item{Authored billion${}^{+}$ scale vector similarity search engine that powers visual search use cases (e.g. fashion, product, lenses) and content-based machine learning data collection (e.g. visually or audio similar media \& cross-modal retrieval) used to collect candidate training data for 50${}^{+}$ ML use cases at Snap} % (e.g. fine grained facial expression detection, body pose for skeletal tracking, cannabis / drug content classification, pet segmentation, audio scene classification, etc.)      
+      \item{Trained \& deployed computer vision models powering Scan including scene tagger, sky segmentation, hand detection}
+      \item{Contributed to backend \& iOS/Android apps for context cards, widgets, search, messaging, friending \& scan features}
+      \item{Owner of machine learning infrastructure track / job family at Snap, defined job requirements and hiring criteria; owned cost goals for org and cut costs by millions of dollars per year; managed relationships with multiple vendors}
+      %\item{Defined technical road map for expanding usage of 1P \& 3P content signals to improve ad ranking/targeting; represented org in XFN groups defining LLM usage policies to streamline ML engineering \& product development}
+	  \item{Managed a mix of backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers}
+      \item{14 patents filed; co-authored 3 publications, gave 2 industry talks, coached speakers for Nvidia GTC \& Grace Hopper}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -98,7 +115,7 @@
 	{Software Development Engineer II}{Sept 2011 - June 2016}
 	\resumeItemListStart
 	\item{Developed software for product de-duplication system that continuously improves Amazon.com catalog quality}
-	\item{Contributed catalog validation logic \& matching criteria; launched over 30 new Amazon.com product categories}
+	%\item{Contributed catalog validation logic \& matching criteria; launched over 30 new Amazon.com product categories}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -108,28 +125,35 @@
 	\item {Conducted research in natural language processing \& educational computing applications; resulted in 8 publications}
 	\resumeItemListEnd
 	
-%	\resumeSubheading
-%	{Space and Naval Warfare Systems Command (SPAWAR)}{San Diego, CA}
-%	{Naval Research Enterprise Intern}{May 2009 - Aug 2009}
-%	\resumeItemListStart
-%	\item {Designed experiments \& developed text classifiers for use on military chat posts. Results published in ICMLA}
-%	\resumeItemListEnd
+	\resumeSubheading
+    {Space and Naval Warfare Systems Command (SPAWAR)}{San Diego, CA}
+	{Naval Research Enterprise Intern}{May 2009 - Aug 2009}	
+	\resumeItemListStart
+	\item {Designed experiments \& developed text classifiers for use on military chat posts. Results published in ICMLA}
+	\resumeItemListEnd
 
 	\resumeSubHeadingListEnd
 	
 	
 	%-----------TALKS & PUBLICATIONS-----------------
-	\section{Select Talks \& Publications \href{https://scholar.google.com/citations?user=8Pc5MiUAAAAJ&hl=en}{(3 industry talks, 14 academic papers, 600+ citations)}}
+	\section{Select Talks, Patents, \& Publications (700+ citations)}
 	\resumeSubHeadingListStart
+
+	\resumeSubheading
+	{Video Enriched Retrieval Augmented Generation using Aligned Video Captions}{MRR @ SIGIR}
+	{K Dela Rosa}{2024}
 
 	\resumeSubheading
 	{Multimodality-guided Image Style Transfer using Cross-modal GAN Inversion}{WACV}
 	{H Wang, P Wu, K Dela Rosa, C Wang, A Shrivastava}{2024}
 
-
 	\resumeSubheading
 	{FORB: A Flat Object Retrieval Benchmark for Universal Image Embedding}{NeurIPS}
 	{P Wu, S Wang, K Dela Rosa, DH Hu}{2023}
+
+	\resumeSubheading
+	{Video matching with a messaging application / US11823456B2}{US Patent}
+	{K Dela Rosa, H Hu, A Huang}{2023}
 
 	\resumeSubheading
 	{Open-Vocabulary Object Detection Using Captions}{CVPR}
@@ -152,7 +176,7 @@
 	%{K Dela Rosa, M Eskenazi}{2013}
 
 	\resumeSubheading
-	{Topical Clustering of Tweets}{ACM SIGIR Workshop on Social Web \& Mining}
+	{Topical Clustering of Tweets}{Social Web \& Mining @ SIGIR}
 	{K Dela Rosa, R Shah, B Lin, A Gershman, R Frederking}{2011}
 	
 	%\resumeSubheading
@@ -178,19 +202,21 @@
 	\resumeSubHeadingListEnd
 
 	%--------SKILLS---xx---------
-\section{Skills \& Technologies}
-\resumeSubHeadingListStart
-\item{
-	\textbf{Coding}{: Python, Java, Go, JavaScript, SQL}
-	\hfill
-	\textbf{Cloud}{: AWS, Google Cloud, Docker, Kubernetes, Spinnaker}      
-} 
-\item{
-	\textbf{AI / ML}{: TensorFlow, PyTorch, Kubeflow, Ray, LangChain, LLMs}
-	\hfill
-	\textbf{Data}{: Spark, Airflow, Beam, NoSQL, Vector DBs}
-} 
-\resumeSubHeadingListEnd
+%\section{Technologies \& Keywords}
+%\resumeSubHeadingListStart
+%\item{
+%	\textbf{Coding}{: Python, Java, Go, JavaScript, SQL}
+%	\hfill
+%	\textbf{Cloud}{: AWS, Google Cloud, Docker, Kubernetes, Spinnaker}      
+%} 
+%\item{
+%	\textbf{AI / ML}{: TensorFlow, PyTorch, Kubeflow, Ray, LangChain, LLMs}
+%	\hfill
+%	\textbf{Data}{: Spark, Airflow, Beam, NoSQL, Vector DBs}
+%} 
+%\resumeSubHeadingListEnd
+%Python, Go, AWS, Goolge Cloud, K8s, Kubeflow, LangChain, LlamaIndex, Vector DBs, Faiss, NoSQL, Spark, PyTorch
+
 
 
 	%-----------RECENT ACTIVITIES -----------------
