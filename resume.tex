@@ -11,12 +11,34 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{tikz}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -72,8 +94,8 @@
 \begin{document}
 	
 	%----------HEADING-----------------
-	\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{\href{https://www.linkedin.com/in/kdrosa/}{\Large Kevin Dela Rosa}} &  \href{mailto:kevd1337@gmail.com}{kevd1337@gmail.com}
+	\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} l @{\extracolsep{\fill}}r}
+		\textbf{\href{https://linktr.ee/kdrwins}{\Large Kevin Dela Rosa}} &  \href{mailto:kevd1337@gmail.com}{kevd1337@gmail.com} & \href{https://www.youtube.com/watch?v=f9ol5MpjIts&list=PL5TLz9GcWHciFfWkNXul0g9JH2inbXs-A&index=1}{demos \ExternalLink}
 	\end{tabular*}
 	
 	
@@ -83,22 +105,17 @@
 	\resumeSubHeadingListStart
 
 	\resumeSubheading
-	{Snap, Inc. (Snapchat)}{Seattle, WA}{Manager, Machine Learning Engineering (Catalog \& Intent Understanding @ Monetization)}{June 2016 - June 2024}%April 2024 - Present
-	%\resumeItemListStart
-	%\item{Defined technical road map for expanding usage of 1P \& 3P content signals to improve ad ranking/targeting; represented org in XFN groups defining LLM usage policies to streamline ML engineering \& product development}
-	%\item{Launched Snapchat's first generative AI powered visually enhanced product advertisements}
-    %\item{Managed backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers}% mentored many; owned cost goals for org; cut infra costs by millions of dollars per year; managed relationships with vendors}
-	%\resumeItemListEnd
-	
-	\resumeSubheadingx
+	% {Snap, Inc. (Snapchat)}{Seattle, WA}{Manager, Machine Learning Engineering (Catalog \& Intent Understanding @ Monetization)}{June 2016 - June 2024}
+    {Snap, Inc. (Snapchat)}{Seattle, WA}{Staff Machine Learning Engineer, Tech Lead (Multimodal AI, Advanced Understanding, Perception)} {June 2016 - June 2024}
+	%\resumeSubheadingx
 	%{Snap, Inc. (Snapchat)}{Seattle, WA}
-	{Staff Machine Learning Engineer / Tech Lead Manager (Multimodal AI @ Perception)}{} %June 2016 - April 2024
+	%{Staff Machine Learning Engineer, Tech Lead Manager (Multimodal AI @ Perception)}{} %June 2016 - April 2024
 	\resumeItemListStart
      \item{Launched Snapchat's first generative AI powered visual enhancement system for product advertisements}
 	  \item{Drove development, data collection / labeling \& training / fine-tuning process of Snap's in-house video captioner}
       \item{Drove implementation of camera unlocking experience that enables AR content to be unlocked by scanning arbitrary images; used in thousands of lenses \& high profile partner integrations as seen at the Super Bowl \& Cannes}
       \item{Launched visual classification via Scan Module in Snapchat's Lens Studio which gives AR creators the ability to recognize 500+ object types across 4 categories (Objects, Places, Cars, Dogs) within a Snapchat lens}
-	  \item{Drove development of Snap's in-house OCR service used by scan visual search, platform integrity ads, spotlight and content moderation; drove wins across company, e.g.  improved spam detection by 168\%, reduced human labeling in moderation cost by \$130k/yr. increased engagement bait detection by 160\%, increased scan unique users by .76\%}
+	  \item{Drove development of Snap's in-house emoji-aware OCR service used by scan visual search, platform integrity ads, spotlight and content moderation; drove wins across company, e.g.  improved spam detection by 168\%, reduced human moderation cost by \$130k/yr. increased engagement bait detection by 160\%}
 	  %\item{Drove integration of math problem detector and equation problem solver into MyAI chat bot}
       %\item{Drove implementation of 10B scale reverse image search capabilities for Scan, and deployed supporting infrastructure including focused web crawling and large scale web archiving / data warehousing solutions}
       \item{Authored billion${}^{+}$ scale vector similarity search engine that powers visual search use cases (e.g. fashion, product, lenses) and content-based machine learning data collection pipelines (e.g. visually or audio similar media \& cross-modal retrieval) used to collect candidate training data for 50${}^{+}$ ML use cases at Snap} % (e.g. fine grained facial expression detection, body pose for skeletal tracking, cannabis / drug content classification, pet segmentation, audio scene classification, etc.)      
@@ -107,7 +124,7 @@
       \item{Owner of machine learning infrastructure track / job family at Snap, defined job requirements and hiring criteria; owned cost goals for org and cut costs by millions of dollars per year;  helped define LLM usage polices in engineering}
       %\item{Defined technical road map for expanding usage of 1P \& 3P content signals to improve ad ranking/targeting; represented org in XFN groups defining LLM usage policies to streamline ML engineering \& product development}
 	  %\item{Managed a mix of backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers}
-      \item{14 patents filed; co-authored 3 publications, gave 2 industry talks, coached speakers for Nvidia GTC \& Grace Hopper}
+     % \item{14 patents filed; authored 1 publication, co-authored 3 publications, gave 2 industry talks}
 	\resumeItemListEnd
 	
 	\resumeSubheading
@@ -136,7 +153,7 @@
 	
 	
 	%-----------TALKS & PUBLICATIONS-----------------
-	\section{Select Talks, Patents, \& Publications (700+ citations)}
+	\section{Select Talks, Patents, \& Publications (750+ citations)}
 	\resumeSubHeadingListStart
 
 	\resumeSubheading
@@ -152,7 +169,7 @@
 	{P Wu, S Wang, K Dela Rosa, DH Hu}{2023}
 
 	\resumeSubheading
-	{Video matching with a messaging application / US11823456B2}{US Patent}
+	{Video matching with a messaging application / US11823456}{US Patent}
 	{K Dela Rosa, H Hu, A Huang}{2023}
 
 	\resumeSubheading
