@@ -81,6 +81,23 @@
 	\end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingA}[2]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+% Updated \resumeSubheading command
+\newcommand{\resumeSubheadingB}[4]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}}
+		\textbf{#1} \\
+		\textit{\small#3} \hspace{1em} \textcolor{gray}{#2, #4} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -95,7 +112,7 @@
 	
 	%----------HEADING-----------------
 	\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} l @{\extracolsep{\fill}}r}
-		\textbf{\href{https://linktr.ee/kdrwins}{\Large Kevin Dela Rosa}} &  \href{mailto:kevd1337@gmail.com}{kevd1337@gmail.com} & \href{https://www.youtube.com/watch?v=f9ol5MpjIts&list=PL5TLz9GcWHciFfWkNXul0g9JH2inbXs-A&index=1}{demos \ExternalLink}
+		\textbf{\href{https://linktr.ee/kdrwins}{\Large Kevin Dela Rosa}} &  \href{mailto:kevd1337@gmail.com}{kevd1337@gmail.com} & \href{https://www.youtube.com/watch?v=f9ol5MpjIts&list=PL5TLz9GcWHciFfWkNXul0g9JH2inbXs-A&index=1}{past products \ExternalLink}
 	\end{tabular*}
 	
 	
@@ -104,9 +121,16 @@
 	\section{Experience}
 	\resumeSubHeadingListStart
 
+	%\resumeSubheading
+	%{TBD}{2024}
+	%{TBD}{}
+	%\resumeItemListStart
+	%\item{TBD}
+	%\resumeItemListEnd
+
 	\resumeSubheading
 	% {Snap, Inc. (Snapchat)}{Seattle, WA}{Manager, Machine Learning Engineering (Catalog \& Intent Understanding @ Monetization)}{June 2016 - June 2024}
-    {Snap, Inc. (Snapchat)}{Seattle, WA}{Staff Machine Learning Engineer, Tech Lead Manager (Multimodal AI, Advanced Understanding, Perception)} {2016 - 2024}
+    {Snap, Inc. (Snapchat)}{2016 - 2024}{Staff Machine Learning Engineer, Tech Lead Manager (Multimodal AI, Advanced Understanding, Perception)} {}
 	%\resumeSubheadingx
 	%{Snap, Inc. (Snapchat)}{Seattle, WA}
 	%{Staff Machine Learning Engineer, Tech Lead Manager (Multimodal AI @ Perception)}{} %June 2016 - April 2024
@@ -119,8 +143,8 @@
 	  %\item{Drove integration of math problem detector and equation problem solver into MyAI chat bot}
       %\item{Drove implementation of 10B scale reverse image search capabilities for Scan, and deployed supporting infrastructure including focused web crawling and large scale web archiving / data warehousing solutions}
       \item{Authored billion${}^{+}$ scale vector similarity search engine that powers visual search use cases (e.g. fashion, product, lenses) and content-based machine learning data collection pipelines (e.g. visually or audio similar media \& cross-modal retrieval) used to collect candidate training data for 50${}^{+}$ ML use cases at Snap} % (e.g. fine grained facial expression detection, body pose for skeletal tracking, cannabis / drug content classification, pet segmentation, audio scene classification, etc.)      
-      \item{Trained \& deployed computer vision models powering Scan including scene tagger, sky segmentation, hand detection}
-      \item{Contributed to backend \& iOS/Android apps for context cards, widgets, search, messaging, friending \& scan features}
+     % \item{Trained \& deployed computer vision models powering Scan including scene tagger, sky segmentation, hand detection}
+      %\item{Contributed to backend \& iOS/Android apps for context cards, widgets, search, messaging, friending \& scan features}
       \item{Owner of machine learning infrastructure track / job family at Snap, defined job requirements and hiring criteria; owned cost goals for org and cut costs by millions of dollars per year;  helped define LLM usage polices in engineering}
       %\item{Defined technical road map for expanding usage of 1P \& 3P content signals to improve ad ranking/targeting; represented org in XFN groups defining LLM usage policies to streamline ML engineering \& product development}
 	  %\item{Managed a mix of backend and machine learning engineers; grew team from 0 to 10; promoted multiple engineers}
@@ -128,31 +152,48 @@
 	\resumeItemListEnd
 	
 	\resumeSubheading
-	{Amazon.com, Inc.}{Seattle, WA}
-	{Software Development Engineer II}{2011 - 2016}
+	{Amazon.com, Inc.}{2011 - 2016}
+	{Software Development Engineer II}{}
 	\resumeItemListStart
 	\item{Developed software for product de-duplication system that continuously improves Amazon.com catalog quality}
 	\item{Contributed catalog validation logic \& matching criteria; launched over 30 new Amazon.com product categories}
 	\resumeItemListEnd
 	
 	%\resumeSubheading
-	%{Carnegie Mellon University}{Pittsburgh, PA}
-	%{Graduate Research Assistant}{2010 - 2011}
+	%{Carnegie Mellon University}{2010 - 2011}
+	%{Graduate Research Assistant}{}
 	%\resumeItemListStart
 	%\item {Conducted research in natural language processing \& educational computing applications; resulted in 8 publications}
 	%\resumeItemListEnd
 	
-	%\resumeSubheading
-    %{Space and Naval Warfare Systems Command (SPAWAR)}{San Diego, CA}
-	%{Naval Research Enterprise Intern}{2009}	
+	\resumeSubheadingA %noA
+    {Space and Naval Warfare Systems Command (SPAWAR)}{2009}
+    {}{}
+	%{Naval Research Enterprise Intern}{}	
 	%\resumeItemListStart
 	%\item {Designed experiments \& developed text classifiers for use on military chat posts. Results published in ICMLA}
 	%\resumeItemListEnd
+	
+	\resumeSubheadingA
+	{National Institute of Standards and Technology (NIST)}{2007}
+	{}{}	
 
 	\resumeSubHeadingListEnd
 	
+	
+	%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Carnegie Mellon University}{2011} 
+{Master of Computer Science in Language Technologies}{}
+\resumeSubheading
+{University of Texas at Arlington}{2009}
+{Bachelor of Science in Software Engineering \& Physics (double major)}{}
+\resumeSubHeadingListEnd
+	
 	%--------SKILLS---xx---------
-\section{Technologies \& Keywords}
+\section{Technologies}
 \resumeSubHeadingListStart
 \item{
 	\textbf{AI / Machine Learning}{: Multimodal AI, Information Retrieval, Computer Vision, Language Technology, LLMs}
@@ -172,81 +213,74 @@
 %} 
 \resumeSubHeadingListEnd
 %Python, Go, AWS, Goolge Cloud, K8s, Kubeflow, LangChain, LlamaIndex, Vector DBs, Faiss, NoSQL, Spark, PyTorch
-
 	
 	%-----------TALKS & PUBLICATIONS-----------------
-	\section{Select Talks, Patents, \& Publications (800+ citations)}
+	\section{Select Talks \& Publications}
 	\resumeSubHeadingListStart
 
-	%\resumeSubheading
+	 %\resumeSubheadingB
 	%{Automated Multimodal Entity Discovery for Large-Scale Video Collection Understanding}{TBD}
 	%{K Dela Rosa}{2024}
+	
+	\resumeSubheadingB
+	{Multimodal Structured Extraction for Self-Querying Music Video Retrieval and Playlist Generation}{Late Breaking Demo @ ISMIR}
+	{K Dela Rosa}{2024}
 
-	\resumeSubheading
+	\resumeSubheadingB
 	{Structured Entity Extraction from Travel Videos Using Vision-Language Models}{RecTour @ RecSys}
 	{K Dela Rosa}{2024}
 	
-	\resumeSubheading
+	\resumeSubheadingB
 	{Video Enriched Retrieval Augmented Generation using Aligned Video Captions}{MRR @ SIGIR}
 	{K Dela Rosa}{2024}
 
-	\resumeSubheading
+	\resumeSubheadingB
 	{Multimodality-guided Image Style Transfer using Cross-modal GAN Inversion}{WACV}
 	{H Wang, P Wu, K Dela Rosa, C Wang, A Shrivastava}{2024}
 
-	\resumeSubheading
+	\resumeSubheadingB
 	{FORB: A Flat Object Retrieval Benchmark for Universal Image Embedding}{NeurIPS}
 	{P Wu, S Wang, K Dela Rosa, DH Hu}{2023}
 
-	\resumeSubheading
-	{Video matching with a messaging application / US11823456}{US Patent}
-	{K Dela Rosa, H Hu, A Huang}{2023}
+	%\resumeSubheadingB
+	%{Video matching with a messaging application / US11823456}{US Patent}
+	%{K Dela Rosa, H Hu, A Huang}{2023}
 
-	\resumeSubheading
+	\resumeSubheadingB
 	{Open-Vocabulary Object Detection Using Captions}{CVPR}
 	{A Zareian, K Dela Rosa, DH Hu, SF Chang}{2021}
 
-	\resumeSubheading
+	\resumeSubheadingB
 	{MLOps at Snapchat: Continuous Machine Learning with Kubeflow \& Spinnaker}{Kubecon}
 	{K Dela Rosa}{2020}
 	
-	\resumeSubheading
+	\resumeSubheadingB
 	{Build accurate training datasets with Amazon SageMaker Ground Truth}{AWS re:Invent}
 	{V Madan, K Dela Rosa}{2019}
 	
-	%\resumeSubheading
+	%\resumeSubheadingB
 	%{Adding intelligence to your JS applications}{CascadiaJS}
 	%{K Dela Rosa}{2015}
 
-	%\resumeSubheading
+	%\resumeSubheadingB
 	%{Self-assessment in the REAP tutor: knowledge, interest, motivation, \& learning}{Journal of AI in Education}
 	%{K Dela Rosa, M Eskenazi}{2013}
 
-	\resumeSubheading
-	{Topical Clustering of Tweets}{Social Web \& Mining @ SIGIR}
-	{K Dela Rosa, R Shah, B Lin, A Gershman, R Frederking}{2011}
+	%\resumeSubheadingB
+	%{Topical Clustering of Tweets}{Social Web \& Mining @ SIGIR}
+	%{K Dela Rosa, R Shah, B Lin, A Gershman, R Frederking}{2011}
 	
-	%\resumeSubheading
+	%\resumeSubheadingB
 	%{The advection of supergranules by the Sun's axisymmetric flows}{Astrophysical Journal}
 	%{DH Hathaway, PE Williams, K Dela Rosa, M Cuntz}{2010}
 	
-	%\resumeSubheading
+	%\resumeSubheadingB
 	%{Text classification methodologies applied to micro-text in military chat}{ICMLA}
 	%{K Dela Rosa, J Ellen}{2009}
 	
 	\resumeSubHeadingListEnd
 
 
-	%-----------EDUCATION-----------------
-	\section{Education}
-	\resumeSubHeadingListStart
-	\resumeSubheading
-	{Carnegie Mellon University}{Pittsburgh, PA} 
-	{Master of Computer Science in Language Technologies}{August 2011}
-	\resumeSubheading
-	{University of Texas at Arlington}{Arlington, TX}
-	{Bachelor of Science in Software Engineering \& Physics (double major)}{May 2009}
-	\resumeSubHeadingListEnd
 
 
 	%-----------RECENT ACTIVITIES -----------------
